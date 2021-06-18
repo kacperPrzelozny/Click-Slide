@@ -1,0 +1,125 @@
+* {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+}
+#rekordy{
+    width: 150px;
+    border: 1px solid white;
+    text-align: center;
+    height: 30px;
+    padding-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20pt;
+    transition: 0.3s;
+}
+#rekordy:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+#gameplay {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    display: flex;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+#leftButton{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#rightButton{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#zdj {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    display: flex;
+    scrollbar-width: 0px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+::-moz-scrollbar{
+    display: none;
+}
+#buttons {
+    width: 600px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.b {
+    width: 90px;
+    height: 40px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 18pt;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.b:hover{
+    background-color: darkgray;
+}
+.row {
+    display: flex;
+}
+
+#plansza {
+    width: 600px;
+    height: 600px;
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#puste {
+    background-image: none;
+    background-color: red;
+}
+
+#zegar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+#cyfry {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 427.5px;
+}
+.wynik{
+    text-align: center;
+    border: 1px solid white;
+}
+.wynik h2,p{
+    margin-top: 7px;
+}
