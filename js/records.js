@@ -3,7 +3,7 @@ records = {
         x = document.cookie
         d = new Date()
         d.setTime(d.getTime()+365*24*60*60*1000)
-        if(x == ""){
+        if(x.length<50){
             for(i=3;i<7;i++){
                 for(j=1;j<=10;j++){
                     document.cookie = i+'x'+i+"top"+j+'=00:00.00.000;'+" Expires="+d.toUTCString()+'; path=/';
@@ -28,7 +28,6 @@ records = {
         tab = x.split(';')
         top10 = ['','','','','','','','','','','']
         nick10 = []
-        //przygotowanie top10 z danej kategorii
         for(i=0;i<10;i++){
             for(j=0;j<tab.length;j++){
                 if(i<9){
@@ -49,10 +48,8 @@ records = {
         }
         top10 = top10.slice(0,top10.indexOf('00:00.00.000'))
         top10.push(czas)
-        console.log(top10)
         top10.sort()
         if(top10.length>10) top10 = top10.slice(0,10)
-        console.log(top10)
         for(i=0;i<10;i++){
             for(j=0;j<tab.length;j++){
                 if(i<9){
@@ -72,7 +69,6 @@ records = {
             else nick10[i]=nick10[i].slice(10)
         }
         miejsce = top10.indexOf(czas)
-        console.log(miejsce)
         if(miejsce!=-1)
             nick10.splice(miejsce,0,nick)
         if(nick10.length>10) nick10 = nick10.slice(0,10)
